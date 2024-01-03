@@ -1,0 +1,163 @@
+
+Expectation
+----
+  * 48 Hours 
+  * Hands-on 
+    Explain => Coding => Demo => Try it out => (Tiny Todos)
+
+Reqd Softwares 
+----
+  * NodeJS V 16+ or 18+ [DONE]
+  * Angular CLI v10+ [DONE]
+  * VS Code Editor [DONE]
+  * Browser of your choice  [DONE]
+
+Skillset
+----
+  * Angular 2+ (4 months+)
+
+  * Associates without desired skillset 
+    1. Manikandan K.B (around 1 month of experience in ng)
+    2. Supreetha M (around 10 days of experience in ng)
+    3. Sandra K (no experience in ng)
+
+Materials:
+-----
+  PDF E-Book, 
+  Unit Testing in Angular PDF Doc, 
+  Source Code in github.com 
+
+=====
+Angular Building Blocks
+----
+  Components 
+  Directives 
+  Services 
+  Guards 
+  Pipes 
+  Interfaces / Models 
+  Classes 
+  Interceptors 
+  Modules 
+
+============
+
+
+Calc 
+-----
+  Resources: FRD, Designs, HLD, LLD 
+
+Software Development
+----
+  Requirements Analysis 
+    Designs 
+      Development
+        Testing
+          Deployment 
+            Maintenance 
+
+===============
+Req => Designs => Dev => Testing => Deployment => Maintenance 
+
+
+Development 
+-----
+  References: FRD, Designs, HLD, LLD 
+
+  * Developers must Prepare Test Cases 
+    1. add should receive only numbers as inputs 
+    2. add should return only number as output 
+    3. ADD button should be disabled if invalid inputs (other than numbers) entered
+
+  Feature: add 
+  ----
+    function add(a: number, b: number): number {
+      return a + b;
+    }
+
+    add(10, 20); // 30
+
+  Tools
+  ------
+
+
+Modern Software Dev Methodologies as of 2024 / Testing Approaches 
+------
+  1. Test-Driven Development (TDD)
+      * is a programming practice that instructs devs to write NEW CODE only if an automated test has failed
+
+      Dev writes test cases => (Instant Feedback of Failure) => dev writes functionality => (Instant Feedback of Success) => [CODE COMPLETED]
+
+      Testing Pattern: AAA (Arrange, Act, Assert)
+      Tools: JEST, Mocha and Chai 
+
+  2. Behavior-Driven Development (BDD)
+      * is an agile dev Methodology 
+      * an app is documented and designed around the Behavior the end users want to experience 
+      
+      Dev writes test cases => (Instant Feedback of Failure) => dev writes functionality => (Instant Feedback of Success) => [CODE COMPLETED]
+
+      Testing Pattern: Given, When, Then 
+      Tools: Jasmine JS
+
+
+Devs write test cases => Devs write functionality => (Tools) => [Success] => Deployment 
+
+============================
+Automated Testing 
+-----------------
+  Levels of Testing 
+  -----------
+    0. Static Type Checking 
+        Tools: TypeScript
+
+    1. Unit Testing [TO LEARN]
+        * Testing small independent unit of a component or other building block
+        * Testing the building block in isolation (w/o connecting to rest api or service)
+        * Individual units would be tested in the building blocks 
+        * Bug Reduction Density: 40-80% 
+
+        Tools: 
+          JEST JS (Framework and a test runner)  ---- [TO LEARN]
+          Jasmine JS (Framework) & Karma (Test Runner)   ---- [NOT LEARNING THIS]
+          
+    2. Integration Testing
+        * Different Units, modules, components tested as combined entity
+        * Behavior of the app would be tested 
+        * To expose issues in the integration of multiple units 
+
+        Example: testing if the child component can update parent component
+
+        Tools:  
+          JEST JS (Framework and a test runner)  
+          Jasmine JS (Framework) & Karma (Test Runner)
+
+    3. End to End (E2E) Testing
+        * Testing the whole app 
+        * multi-step tests combining multiple unit and integration tests into one big test 
+        * Usually mocked or stubbed very little 
+        * Tests are done in a simulated Browser
+        * there may or may not be an UI while the test is running 
+        Example: Testing the complete authentication flow 
+
+        Tools: Protractor or CypressJS or Selenium or Puppeteer or Playwright
+
+-------------------
+
+How to write the test cases? 
+  AAA Pattern with JEST Syntax
+Where to write?  
+  in the spec.ts file
+How to test our app against the identified test cases?
+  ng test 
+
+==============
+
+Integrating JEST in Angular App
+===========
+  Step #1: 
+    Let's install the necessary packages 
+
+    npm i --save-dev jest jest-preset-angular @types/jest
+
+

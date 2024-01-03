@@ -1,29 +1,17 @@
+// necessary tools imported for testing
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+
+// taking up the component for testing
 import { AppComponent } from './app.component';
 
+// describes what component is being tested
+// group of related test cases = TEST SUITE
 describe('AppComponent', () => {
-  beforeEach(() => TestBed.configureTestingModule({
-    imports: [RouterTestingModule],
-    declarations: [AppComponent]
-  }));
-
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
-  });
-
-  it(`should have as title 'angular-jest-app'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-jest-app');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-jest-app app is running!');
-  });
+  // ideal place for you to write test cases a.k.a test specs a.k.a tests
+  
 });
+
+/* 
+  describe, it, expect -- are from jasmine js or jest
+*/
