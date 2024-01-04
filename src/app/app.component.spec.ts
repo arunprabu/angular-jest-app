@@ -1,17 +1,46 @@
-// necessary tools imported for testing
+// Test Pattern: AAA (Arrange, Act, Assert)
+
+// Arrange
+// Let's load the necessary tools
 import { TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
-
-// taking up the component for testing
+// Let's load the sample
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
 
-// describes what component is being tested
-// group of related test cases = TEST SUITE
+// Let's test the app component
+// TEST SUITE = a group of related test specs
 describe('AppComponent', () => {
-  // ideal place for you to write test cases a.k.a test specs a.k.a tests
-  
+  // setup
+  beforeEach(() => {
+    // Act
+    TestBed.configureTestingModule({
+      declarations: [AppComponent, HeaderComponent, FooterComponent],
+    });
+  });
+
+  // ideal place for us to write test cases or test specs or tests
+  // Test spec #1
+  it('should create the app', () => {
+    // Act
+    const fixture = TestBed.createComponent(AppComponent);
+    // We are taking up the component class for testing
+    const app = fixture.componentInstance;
+    // Assert (Mandatory) -- all tests must be ended with assert
+    expect(app).toBeTruthy();
+  });
+
+  // Test Spec #2
+  it(`has variable title with value 'AngularJEST App!' in it`, () => {
+    // Act
+    const fixture = TestBed.createComponent(AppComponent);
+    // We are taking up the component class for testing
+    const app = fixture.componentInstance;
+    // Assert (must)
+    expect(app.title).toBe('AngularJEST App!');
+  });
 });
 
-/* 
-  describe, it, expect -- are from jasmine js or jest
+/* describe, it, expect -- are from jest 
+   toBeTruthy() is a matcher fom jest
 */

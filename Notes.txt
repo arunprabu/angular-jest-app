@@ -186,17 +186,17 @@ Integrating JEST in Angular App
     }
 
   Step #3:
-    Create jest config file with the following lines of code 
+    Create jest.config.js file with the following lines of code 
 
     module.exports = {
       preset: "jest-preset-angular",
       roots: ["src"],
       testMatch: ["**/+(*.)+(spec).+(ts)"],
-      setupFilesAfterEnv: ["<rootDir>/src/setup-jest.ts"],
+      setupFilesAfterEnv: ["<rootDir>/src/load-jest-preset.ts"],
     };
 
   Step #4:
-    create the file src/setup-jest.ts and have the following line of code in it 
+    create the file src/load-jest-preset.ts and have the following line of code in it 
 
     import 'jest-preset-angular';
 
@@ -222,3 +222,20 @@ Integrating JEST in Angular App
     fix it in tsconfig.json with the following line 
       "esModuleInterop": true,
 
+  Step #7:
+  ----
+    Update Angular TestBed configuration (optional): If you are using TestBed 
+    in your tests, you might need to configure it to work with Jest. 
+    Create a file named src/jest.setup.ts in your src directory with the 
+    following content:
+
+    import 'jest-preset-angular/setup-jest';
+
+  Step #8:
+    in jest.config.js  update with the following 
+    setupFilesAfterEnv: [
+      "<rootDir>/src/load-jest-preset.ts",
+      "<rootDir>/src/jest.setup.ts",
+    ],
+
+========
