@@ -153,6 +153,22 @@ How to test our app against the identified test cases?
 
 ==============
 
+Removing Jasmine and Karma from Angular App
+=========
+  Step #1: 
+    Uninstall all jasmine, karma and karma plugin packages 
+    npm uninstall --save-dev jasmine-core @types/jasmine 
+    npm uninstall --save-dev karma 
+    npm uninstall --save-dev karma-chrome-launcher karma-coverage karma-jasmine karma-jasmine-html-reporter
+
+  Step #2: 
+    Remove test configuration from angular.json file 
+
+  Step #3: 
+    (if you have angular verions lesser than 14) 
+    Delete karma.config.js file and src/test.ts file
+    
+
 Integrating JEST in Angular App
 ===========
   Step #1: 
@@ -160,4 +176,49 @@ Integrating JEST in Angular App
 
     npm i --save-dev jest jest-preset-angular @types/jest
 
+  Step #2:
+    Update package.json scripts: Add the following scripts to your package.json file 
+  to run Jest tests:
+
+    "scripts": {
+      "test": "jest",
+      "test:watch": "jest --watch",
+    }
+
+  Step #3:
+    Create jest config file with the following lines of code 
+
+    module.exports = {
+      preset: "jest-preset-angular",
+      roots: ["src"],
+      testMatch: ["**/+(*.)+(spec).+(ts)"],
+      setupFilesAfterEnv: ["<rootDir>/src/setup-jest.ts"],
+    };
+
+  Step #4:
+    create the file src/setup-jest.ts and have the following line of code in it 
+
+    import 'jest-preset-angular';
+
+  Step #5:
+    Update tsconfig.spec.json file 
+
+    {
+      ......,
+      "compilerOptions": {
+        "outDir": "./out-tsc/spec",
+        "types": [
+          "jest" // this was jasmine earlier
+        ]
+      },
+      .....,
+      ....,
+    }
+
+  Step #6:
+  --
+    if you have warning related imports when trying npm run test command ,
+
+    fix it in tsconfig.json with the following line 
+      "esModuleInterop": true,
 
