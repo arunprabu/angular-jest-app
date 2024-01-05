@@ -4,13 +4,14 @@ import { Component } from '@angular/core';
   selector: 'app-footer',
   template: `
     <footer class="text-center">
-      <hr>
-      <p>Copyright 2024 | Arun<p>
+      <hr />
+      <app-menu-list></app-menu-list>
+      <p>Copyright {{ copyrightYear }} | {{ developerName }}</p>
     </footer>
   `,
-  styles: [
-  ]
+  styles: [],
 })
 export class FooterComponent {
-
+  copyrightYear = 2024;
+  developerName = 'Arun';
 }

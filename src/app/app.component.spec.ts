@@ -3,10 +3,13 @@
 // Arrange
 // Let's load the necessary tools
 import { TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+
 // Let's load the sample
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
+import { MenuListComponent } from './shared/components/menu-list/menu-list.component';
 
 // Let's test the app component
 // TEST SUITE = a group of related test specs
@@ -15,7 +18,13 @@ describe('AppComponent', () => {
   beforeEach(() => {
     // Act
     TestBed.configureTestingModule({
-      declarations: [AppComponent, HeaderComponent, FooterComponent],
+      declarations: [
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
+        MenuListComponent,
+      ],
+      imports: [RouterTestingModule], // include this for router-outlet
     });
   });
 
@@ -31,7 +40,7 @@ describe('AppComponent', () => {
   });
 
   // Test Spec #2
-  it(`has variable title with value 'AngularJEST App!' in it`, () => {
+  test(`has variable named title with value 'AngularJEST App!' in it`, () => {
     // Act
     const fixture = TestBed.createComponent(AppComponent);
     // We are taking up the component class for testing
@@ -41,6 +50,7 @@ describe('AppComponent', () => {
   });
 });
 
-/* describe, it, expect -- are from jest 
-   toBeTruthy() is a matcher fom jest
+/* describe, it, test, expect -- are from jest 
+  it() and test() are same. 
+  toBeTruthy() is a matcher fom jest
 */
