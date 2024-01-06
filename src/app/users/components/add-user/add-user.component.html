@@ -96,7 +96,7 @@
 
       <div class="form-group row">
         <div class="col-sm-10 offset-sm-2">
-          <button type="submit" class="btn btn-primary submitBtn">
+          <button type="submit" class="btn btn-primary submitBtn" [disabled]="userForm.invalid">
             Submit
           </button>
         </div>

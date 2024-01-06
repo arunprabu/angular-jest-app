@@ -8,6 +8,18 @@ import { map } from 'rxjs';
 export class UserService {
   constructor(private http: HttpClient) {}
 
+  createUser(userFormData: any) {
+    console.log(userFormData);
+    return this.http
+      .post('https://jsonplaceholder.typicode.com/users', userFormData)
+      .pipe(
+        map((res: any) => {
+          console.log(res);
+          return res;
+        })
+      );
+  }
+
   getUsers() {
     // https://jsonplaceholder.typicode.com/users
     // GET, HttpClient
