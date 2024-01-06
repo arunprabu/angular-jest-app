@@ -317,7 +317,6 @@ Testing Pipes
 Code Coverage 
 
 
-
 Todos
 ----
   1. Test the h1 content in home comp 

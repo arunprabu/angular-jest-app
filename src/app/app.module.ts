@@ -12,7 +12,8 @@ import { MenuListComponent } from './shared/components/menu-list/menu-list.compo
 import { CalcComponent } from './calc/calc.component';
 import { ListUsersComponent } from './users/components/list-users/list-users.component';
 import { AddUserComponent } from './users/components/add-user/add-user.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 // Main Switching Box
 @NgModule({
@@ -31,7 +32,9 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
