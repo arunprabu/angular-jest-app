@@ -18,4 +18,7 @@ describe('HomeComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  // TODO: Test the h1 content 
+  // TODO: Test the paragraph text
 });

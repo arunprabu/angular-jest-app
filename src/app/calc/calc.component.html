@@ -1,0 +1,18 @@
+<div class="mt-2">
+  <h1>Let's Build the Calculator</h1>
+  <input [(ngModel)]="operand1" placeholder="Operand 1" class="input1"/>
+  <input [(ngModel)]="operand2" placeholder="Operand 2" />
+  <br />
+  <div class="btn-group mt-3 box" role="group">
+    <button (click)="add()" class="add-btn btn btn-primary btn-sm">ADD</button>
+    <button (click)="subtract()" class="sub-btn btn btn-danger btn-sm">SUBTRACT</button>
+    <button class="mul-btn btn btn-success btn-sm">MULTIPLY</button>
+    <button class="div-btn btn btn-info btn-sm">DIVIDE</button>
+  </div>
+
+  <div class="mt-2 box">
+    <p class="result-box" style="font-size: 30px; background-color: yellow">
+      Result: {{ result }}
+    </p>
+  </div>
+</div>

@@ -9,6 +9,10 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { MenuListComponent } from './shared/components/menu-list/menu-list.component';
+import { CalcComponent } from './calc/calc.component';
+import { ListUsersComponent } from './users/components/list-users/list-users.component';
+import { AddUserComponent } from './users/components/add-user/add-user.component';
+import { FormsModule } from '@angular/forms';
 
 // Main Switching Box
 @NgModule({
@@ -19,11 +23,15 @@ import { MenuListComponent } from './shared/components/menu-list/menu-list.compo
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    MenuListComponent
+    MenuListComponent,
+    CalcComponent,
+    ListUsersComponent,
+    AddUserComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

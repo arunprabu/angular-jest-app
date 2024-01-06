@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { MenuListComponent } from './shared/components/menu-list/menu-list.component';
+import { FormsModule } from '@angular/forms';
 
 // Let's test the app component
 // TEST SUITE = a group of related test specs

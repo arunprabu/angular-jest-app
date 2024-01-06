@@ -297,17 +297,21 @@ Naming Conventions & Casing
 Testing Components 
   Testing Component Class 
     variable [DONE]
-    method 
+    method [DONE]
     event handler
   Testing Component HTML 
     Static HTML Text [DONE]
-    Dynamic HTML Text
+    Dynamic HTML Text 
   Testing Component styles 
     css classes 
     inline styles 
+  Testing Reactive Forms
+  Mocks 
+  Spy 
 
+Router Testing  
 Testing Directives
 Testing Services 
 Testing Pipes
-
+Code Coverage 
 

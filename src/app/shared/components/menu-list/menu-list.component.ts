@@ -15,6 +15,16 @@ import { Component } from '@angular/core';
         >
       </li>
       <li class="nav-item">
+        <a class="nav-link" routerLink="/calc" routerLinkActive="active"
+          >Calc</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/users" routerLinkActive="active"
+          >Users</a
+        >
+      </li>
+      <li class="nav-item">
         <a class="nav-link" routerLink="/about" routerLinkActive="active"
           >About Us</a
         >
