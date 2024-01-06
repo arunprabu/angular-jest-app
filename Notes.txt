@@ -298,20 +298,30 @@ Testing Components
   Testing Component Class 
     variable [DONE]
     method [DONE]
-    event handler
+    event handler [DONE]
   Testing Component HTML 
     Static HTML Text [DONE]
-    Dynamic HTML Text 
+    Dynamic HTML Text [DONE] 
   Testing Component styles 
-    css classes 
-    inline styles 
+    inline styles [DONE]
+    css classes [TODO]
   Testing Reactive Forms
   Mocks 
   Spy 
 
 Router Testing  
+  404 
 Testing Directives
 Testing Services 
 Testing Pipes
 Code Coverage 
+
+
+
+Todos
+----
+  1. Test the h1 content in home comp 
+  2. Test the paragraph text in home comp 
+  3. Write test for for subtract, multiply, divide
+  4. Test whether the btn-primary css class exists in a button in home comp 
 

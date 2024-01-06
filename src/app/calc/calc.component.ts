@@ -15,7 +15,7 @@ import { Component } from '@angular/core';
     `,
   ],
 })
-export class CalcComponent {
+export class CalcComponent {   
   operand1: string = '0';
   operand2: string = '0';
   result: number = 0;
