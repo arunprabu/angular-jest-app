@@ -305,8 +305,8 @@ Testing Components
   Testing Component styles 
     inline styles [DONE]
     css classes [TODO]
-  Testing Reactive Forms
-  Mocks 
+  Testing Reactive Forms 
+  Mocks [DONE]
   Spy 
 
 Router Testing  
