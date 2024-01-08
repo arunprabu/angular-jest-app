@@ -305,22 +305,22 @@ Testing Components
   Testing Component styles 
     inline styles [DONE]
     css classes [TODO]
-  Testing Reactive Forms 
-  Mocks [DONE]
+  Testing Reactive Forms [DONE]
+  Mocks [DONE] 
   Spy 
 
-Router Testing  
+Router Testing [10 mins]
   404 
-Testing Directives
-Testing Services 
-Testing Pipes
-Code Coverage 
+Testing Directives [Mocking component -- 1 hour ]
+Testing Services [Will teach you spy - 1 hour]
+Testing Pipes [30 mins]
+Code Coverage [30 mins]
 
 
 Todos
 ----
   1. Test the h1 content in home comp 
   2. Test the paragraph text in home comp 
-  3. Write test for for subtract, multiply, divide
-  4. Test whether the btn-primary css class exists in a button in home comp 
+  3. Test whether the btn-primary css class exists in a button in home comp 
+  4. Write test for subtract, multiply, divide in calc.comp 
 

@@ -34,7 +34,9 @@ export class AddUserComponent {
       this.userService.createUser(this.userForm.value)
         .subscribe((res: any) => {
           console.log(res);
-          this.isSaved = true;
+          if(res && res.id){
+            this.isSaved = true;
+          }
         });
     }
   }
