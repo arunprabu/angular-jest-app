@@ -311,10 +311,9 @@ Testing Components
     Refer: https://github.com/arunprabu/unit-testing-ng-june2022/blob/master/src/app/contact/contact.component.spec.ts
            https://github.com/arunprabu/employee-mgmt-oct-sept2022-yamini/blob/master/src/app/employees/components/add-employee/add-employee.component.spec.ts
 
-Router Testing [10 mins]
-  404 
-Testing Directives [Mocking component -- 1 hour ]
+Router Testing [DONE]
 Testing Services [DONE]
+Testing Directives [DONE]
 Testing Pipes [30 mins]
 Code Coverage [30 mins]
 

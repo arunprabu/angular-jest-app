@@ -14,6 +14,8 @@ import { ListUsersComponent } from './users/components/list-users/list-users.com
 import { AddUserComponent } from './users/components/add-user/add-user.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { PageNotFoundComponent } from './shared/components/page-not-found/page-not-found.component';
+import { ColorizerDirective } from './about/directives/colorizer.directive';
 
 // Main Switching Box
 @NgModule({
@@ -27,7 +29,9 @@ import { HttpClientModule } from '@angular/common/http';
     MenuListComponent,
     CalcComponent,
     ListUsersComponent,
-    AddUserComponent
+    AddUserComponent,
+    PageNotFoundComponent,
+    ColorizerDirective
   ],
   imports: [
     BrowserModule,
