@@ -307,14 +307,21 @@ Testing Components
     css classes [TODO]
   Testing Reactive Forms [DONE]
   Mocks [DONE] 
-  Spy 
+  Spy [DONE]
+    Refer: https://github.com/arunprabu/unit-testing-ng-june2022/blob/master/src/app/contact/contact.component.spec.ts
+           https://github.com/arunprabu/employee-mgmt-oct-sept2022-yamini/blob/master/src/app/employees/components/add-employee/add-employee.component.spec.ts
 
 Router Testing [10 mins]
   404 
 Testing Directives [Mocking component -- 1 hour ]
-Testing Services [Will teach you spy - 1 hour]
+Testing Services [DONE]
 Testing Pipes [30 mins]
 Code Coverage [30 mins]
+
+Two ways to test api calls
+----
+  1. Mocks 
+  2. Spy 
 
 
 Todos

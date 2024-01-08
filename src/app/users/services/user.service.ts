@@ -6,7 +6,7 @@ import { map } from 'rxjs';
   providedIn: 'root',
 })
 export class UserService {
-  constructor(private http: HttpClient) {}
+  constructor(public http: HttpClient) {}
 
   createUser(userFormData: any) {
     console.log(userFormData);
@@ -25,8 +25,19 @@ export class UserService {
     // GET, HttpClient
     return this.http.get('https://jsonplaceholder.typicode.com/users') 
       .pipe(map((res: any) => {
-        console.log(res);
+        // console.log(res);
         return res;
       }));
+  }
+
+  getUserById() {
+    // https://jsonplaceholder.typicode.com/users/1
+    // GET, HttpClient
+    return this.http.get('https://jsonplaceholder.typicode.com/users/1').pipe(
+      map((res: any) => {
+        // console.log(res);
+        return res;
+      })
+    );
   }
 }
