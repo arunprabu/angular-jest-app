@@ -33,7 +33,7 @@ export class BarChartComponent {
           'Virat Kohli',
           'Sachin Tendulkar',
           'Rohit Sharma',
-          'Rickey Ponting',
+          'Ricky Ponting',
           'AB De Villiers',
           'Chris Gayle',
         ],
