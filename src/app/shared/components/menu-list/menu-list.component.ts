@@ -34,6 +34,11 @@ import { Component } from '@angular/core';
           >Contact Us</a
         >
       </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/highcharts-demo" routerLinkActive="active"
+          >Highcharts Demo</a
+        >
+      </li>
     </ul>
   `,
   styles: [],

@@ -7,6 +7,7 @@ import { CalcComponent } from './calc/calc.component';
 import { ListUsersComponent } from './users/components/list-users/list-users.component';
 import { AddUserComponent } from './users/components/add-user/add-user.component';
 import { PageNotFoundComponent } from './shared/components/page-not-found/page-not-found.component';
+import { HighchartsDemoComponent } from './highcharts-demo/highcharts-demo.component';
 
 // Routing Config
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'users/add', component: AddUserComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'highcharts-demo', component: HighchartsDemoComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 

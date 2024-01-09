@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HighchartsChartModule } from 'highcharts-angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { PageNotFoundComponent } from './shared/components/page-not-found/page-not-found.component';
 import { ColorizerDirective } from './about/directives/colorizer.directive';
 import { EllipsisPipe } from './shared/pipes/ellipsis.pipe';
+import { HighchartsDemoComponent } from './highcharts-demo/highcharts-demo.component';
+import { LineChartComponent } from './highcharts-demo/components/line-chart/line-chart.component';
 
 // Main Switching Box
 @NgModule({
@@ -33,14 +36,17 @@ import { EllipsisPipe } from './shared/pipes/ellipsis.pipe';
     AddUserComponent,
     PageNotFoundComponent,
     ColorizerDirective,
-    EllipsisPipe
+    EllipsisPipe,
+    HighchartsDemoComponent,
+    LineChartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    HighchartsChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
