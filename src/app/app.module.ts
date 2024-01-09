@@ -20,6 +20,7 @@ import { ColorizerDirective } from './about/directives/colorizer.directive';
 import { EllipsisPipe } from './shared/pipes/ellipsis.pipe';
 import { HighchartsDemoComponent } from './highcharts-demo/highcharts-demo.component';
 import { LineChartComponent } from './highcharts-demo/components/line-chart/line-chart.component';
+import { BarChartComponent } from './highcharts-demo/components/bar-chart/bar-chart.component';
 
 // Main Switching Box
 @NgModule({
@@ -38,7 +39,8 @@ import { LineChartComponent } from './highcharts-demo/components/line-chart/line
     ColorizerDirective,
     EllipsisPipe,
     HighchartsDemoComponent,
-    LineChartComponent
+    LineChartComponent,
+    BarChartComponent
   ],
   imports: [
     BrowserModule,
