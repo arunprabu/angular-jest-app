@@ -6,8 +6,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class EllipsisPipe implements PipeTransform {
 
   transform(value: string, endAt?: number ): string {
-    console.log(value);
-    console.log(endAt);
     if(endAt && value.length > 0) {
       return value.substring(0, endAt) + '...'
     }

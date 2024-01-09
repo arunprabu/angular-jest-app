@@ -314,7 +314,7 @@ Testing Components
 Router Testing [DONE]
 Testing Services [DONE]
 Testing Directives [DONE]
-Testing Pipes [30 mins]
+Testing Pipes [DONE]
 Code Coverage [30 mins]
 
 Two ways to test api calls
@@ -322,6 +322,66 @@ Two ways to test api calls
   1. Mocks 
   2. Spy 
 
+Code Coverage
+--------
+  Desired Code Coverage: 80% 
+
+========
+How to generate coverage reports in JEST Angular App?
+=========
+To generate code coverage reports for your Angular project using Jest, 
+you can follow these general steps:
+If you want the coverage report in HTML format, you can follow these steps:
+
+Step 1:
+-----
+  Install Coverage Report HTML Generator:
+  Ensure you have the necessary dependencies installed.
+  Install the istanbul-reports package:
+
+    npm install --save-dev istanbul-reports
+
+Step 2:
+-------
+  Update Jest Configuration:
+  Update your Jest configuration (jest.config.js) to use the HTML coverage reporter:
+
+  // jest.config.js
+    module.exports = {
+      preset: 'jest-preset-angular',
+      setupFilesAfterEnv: ['<rootDir>/src/jest.setup.ts'],
+      collectCoverage: true,
+      coverageDirectory: '<rootDir>/coverage',
+      coverageReporters: ['lcov', 'html'],
+      // ... other configurations
+    };
+
+  coverageReporters specifies the coverage reporters to use. 
+  Adding 'html' will generate an HTML coverage report.
+
+Step 3:
+-------
+  Run Tests with Coverage:
+  Execute your tests with coverage by running:
+    npm test -- --coverage
+
+  This will run your tests and generate code coverage reports, 
+  including an HTML report.
+
+  Viewing HTML Report:
+  After running the tests, you can find the HTML coverage report in the 
+  coverage directory. 
+  Open the HTML report (index.html) in your browser to view detailed coverage information.
+
+    open coverage/lcov-report/index.html
+
+  This will open a detailed HTML coverage report in your default web browser.
+
+  By configuring coverageReporters to include 'html', Jest will generate the 
+  HTML coverage report alongside other coverage reports. 
+  Adjust the configuration according to your project structure and requirements.
+
+=======
 
 Todos
 ----
