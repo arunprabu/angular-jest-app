@@ -16,6 +16,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PageNotFoundComponent } from './shared/components/page-not-found/page-not-found.component';
 import { ColorizerDirective } from './about/directives/colorizer.directive';
+import { EllipsisPipe } from './shared/pipes/ellipsis.pipe';
 
 // Main Switching Box
 @NgModule({
@@ -31,7 +32,8 @@ import { ColorizerDirective } from './about/directives/colorizer.directive';
     ListUsersComponent,
     AddUserComponent,
     PageNotFoundComponent,
-    ColorizerDirective
+    ColorizerDirective,
+    EllipsisPipe
   ],
   imports: [
     BrowserModule,

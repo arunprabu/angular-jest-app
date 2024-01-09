@@ -97,7 +97,6 @@ describe('ListUsersComponent', () => {
     userService.getUsers.mockReturnValue(of(mockUsers));
 
     // TODO: THIS IS INCOMPLETE -- WRITE THE LOGIC by refering calc.comp.spec.ts --for dynamic html content 
-    
   });
 
 });

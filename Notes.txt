@@ -329,4 +329,7 @@ Todos
   2. Test the paragraph text in home comp 
   3. Test whether the btn-primary css class exists in a button in home comp 
   4. Write test for subtract, multiply, divide in calc.comp 
+  5. test mouseleave in colorizer Directive
+  6. Learn about negative mocking using jest in angular in add-user.comp 
+  7. check whether virat kohli is displayed in html element of list-users.comp 
 

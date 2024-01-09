@@ -1,7 +1,19 @@
 <div>
   <h1>About Testing Directives</h1>
 
-  <div appColorizer>
-    This div will be colorized by a directive
-  </div>
+  <div appColorizer>This div will be colorized by a directive</div>
+
+  <h2>Testing Pipes</h2>
+  <p>{{ favBookTitle | uppercase }}</p>
+  <p>ng g p shared/pipes/ellipsis</p>
+
+  <h5>Without Ellipsis Pipe:</h5>
+  <p>{{ randomText }}</p>
+  <h5>Ellipsis Pipe Without Param:</h5>
+  <p>{{ randomText | ellipsis }}</p>
+
+  <h5>Ellipsis Pipe with Param:</h5>
+  <p>{{ randomText | ellipsis: 100 }}</p>
+  <p>{{ randomText | ellipsis: 40 }}</p>
+  <p>{{ randomText | ellipsis: 200 }}</p>
 </div>
