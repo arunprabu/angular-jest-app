@@ -38,6 +38,11 @@ export class BubbleChartComponent implements OnInit{
         gridLineWidth: 2,
       },
       yAxis: {
+        labels: {
+          formatter: (data) => {
+            return data.value + ' units';
+          }
+        },
         title: {
           text: 'Y-Axis',
         },
@@ -90,5 +95,13 @@ export class BubbleChartComponent implements OnInit{
         },
       ] as Highcharts.SeriesOptionsType[],
     };
+  }
+
+  getUnitConverted(data: any) {
+    
+
+
+
+    
   }
 }
