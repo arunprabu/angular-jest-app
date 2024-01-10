@@ -393,3 +393,12 @@ Todos
   6. Learn about negative mocking using jest in angular in add-user.comp 
   7. check whether virat kohli is displayed in html element of list-users.comp 
 
+
+======
+To Fix the warning after integrating highcharts 
+try adding 
+  "allowedCommonJsDependencies": [
+    "highcharts"
+  ] 
+in angular.json
+=======

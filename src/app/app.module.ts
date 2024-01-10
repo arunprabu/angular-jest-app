@@ -21,6 +21,8 @@ import { EllipsisPipe } from './shared/pipes/ellipsis.pipe';
 import { HighchartsDemoComponent } from './highcharts-demo/highcharts-demo.component';
 import { LineChartComponent } from './highcharts-demo/components/line-chart/line-chart.component';
 import { BarChartComponent } from './highcharts-demo/components/bar-chart/bar-chart.component';
+import { ScatterplotChartComponent } from './highcharts-demo/components/scatterplot-chart/scatterplot-chart.component';
+import { BubbleChartComponent } from './highcharts-demo/components/bubble-chart/bubble-chart.component';
 
 // Main Switching Box
 @NgModule({
@@ -40,7 +42,9 @@ import { BarChartComponent } from './highcharts-demo/components/bar-chart/bar-ch
     EllipsisPipe,
     HighchartsDemoComponent,
     LineChartComponent,
-    BarChartComponent
+    BarChartComponent,
+    ScatterplotChartComponent,
+    BubbleChartComponent
   ],
   imports: [
     BrowserModule,
