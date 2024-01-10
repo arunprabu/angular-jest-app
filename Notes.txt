@@ -402,3 +402,29 @@ try adding
   ] 
 in angular.json
 =======
+
+
+restaurant (offering food service)
+--
+  * subscribers sitting 
+    * (waiter comes to the table)
+      * we are placing our orders 
+        * go to the kitchen and place our orders 
+          * waiting for our prepared food from kitchen 
+            * kitchen will deliver the food to the waiter, who will enrich the food
+              * waiter will take the food to our and deliver 
+                * we will consume 
+
+
+
+ What's Observable?
+  It's a collection that returned over time. 
+  It's a push, that sends multiple values
+  Observable is like restaurant kitchen.
+  If you subscribe to observable, it decides when to give information 
+
+-----
+Operators
+----
+  * will operate on source data of the observables 
+  * may alter, sort, filter, add, remove, update, 
